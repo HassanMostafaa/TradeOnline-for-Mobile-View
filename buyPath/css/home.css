@@ -432,7 +432,7 @@ p {
     margin-top: 10px;
     content: "Most Visited Categories";
     position: absolute;
-    top: -35px;
+    top: -45px;
     padding: 5px;
     font-size: 18px;
     font-weight: 600;
@@ -618,11 +618,11 @@ p {
 
     .section-a .best-popular-cards .card {
 
-        max-width: 150px;
+        max-width: 250px;
     }
 
     .section-a .best-popular-cards .card img {
-        max-width: 150px;
+        max-width: 250px;
     }
 
     .card-text p {
@@ -852,7 +852,7 @@ p {
         align-items: center;
     }
 
-    .best-popular-cards .card {}
+
 
     .on-sale,
     .most-views {
@@ -916,7 +916,7 @@ p {
     }
 
     .mini-nav .menu ul li a {
-        font-size: 10px;
+        font-size: 13px;
         margin: 10px;
         opacity: 1;
         height: 0;
@@ -954,4 +954,6 @@ p {
         width: 250px;
         height: 150px;
     }
+
+    .section-a .best-popular-cards {}
 }

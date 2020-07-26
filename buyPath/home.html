@@ -35,7 +35,7 @@
                 <li> <a href="#"> Login </a></li>
 
 
-                <li> <i class="fas fa-shopping-cart"></i> </li>
+                <li> <i onclick="cartPage()" class="fas fa-shopping-cart"></i> </li>
             </ul>
         </div>
     </div>
@@ -75,14 +75,14 @@
     <div class="mini-nav">
         <div class="menu">
             <ul>
-                <li> <a href="#"> Books </a></li>
-                <li> <a href="#"> Art, </a></li>
-                <li> <a href="#"> Fashion </a></li>
+                <li> <a href="product.html"> Books </a></li>
+                <li> <a href="product.html"> Art, </a></li>
+                <li> <a href="product.html"> Fashion </a></li>
 
-                <li> <a href="#"> Electronics </a></li>
-                <li> <a href="#"> Furniture </a></li>
-                <li> <a href="#">Health </a></li>
-                <li> <a href="#"> Sports </a></li>
+                <li> <a href="product.html"> Electronics </a></li>
+                <li> <a href="product.html"> Furniture </a></li>
+                <li> <a href="product.html">Health </a></li>
+                <li> <a href="product.html"> Sports </a></li>
 
 
             </ul>
@@ -344,6 +344,31 @@
         function logoRedirect() {
             window.location.href = "../index.html";
         }
+
+
+
+        function cartPage() {
+            window.location.href = "card.html"
+        }
+
+        const card = document.querySelectorAll('.card');
+        card.forEach(card => {
+            card.addEventListener('click', () => {
+                window.location.href = "item.html";
+            });
+        });
+
+        const linkMostVisited = document.querySelector('.small-pic');
+        linkMostVisited.addEventListener('click', () => {
+            window.location.href = "product.html";
+        })
+        const linkMostVisitedbig = document.querySelector('.big-pic');
+        linkMostVisitedbig.addEventListener('click', () => {
+            window.location.href = "product.html";
+        })
+
+
+
 
 
         function openSideMenu() {

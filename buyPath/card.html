@@ -74,14 +74,14 @@
     <div class="mini-nav">
         <div class="menu">
             <ul>
-                <li> <a href="#"> Books </a></li>
-                <li> <a href="#"> Art, </a></li>
-                <li> <a href="#"> Fashion </a></li>
+                <li> <a href="product.html"> Books </a></li>
+                <li> <a href="product.html"> Art, </a></li>
+                <li> <a href="product.html"> Fashion </a></li>
 
-                <li> <a href="#"> Electronics </a></li>
-                <li> <a href="#"> Furniture </a></li>
-                <li> <a href="#">Health </a></li>
-                <li> <a href="#"> Sports </a></li>
+                <li> <a href="product.html"> Electronics </a></li>
+                <li> <a href="product.html"> Furniture </a></li>
+                <li> <a href="product.html">Health </a></li>
+                <li> <a href="product.html"> Sports </a></li>
 
 
             </ul>
@@ -110,9 +110,9 @@
                 <p>Color:Black
                 </p>
             </div>
-            <div>
-                <a href="" class="buyBTN">Buy Now</a>
-            </div>
+            <button class="buyBTN">
+                Buy Now
+            </button>
         </div>
 
         <div class="card">
@@ -131,9 +131,9 @@
                 <p>Color:Black
                 </p>
             </div>
-            <div>
-                <a href="" class="buyBTN">Buy Now</a>
-            </div>
+            <button class="buyBTN">
+                Buy Now
+            </button>
         </div>
 
         <div class="card">
@@ -152,9 +152,9 @@
                 <p>Color:Black
                 </p>
             </div>
-            <div>
-                <a href="" class="buyBTN">Buy Now</a>
-            </div>
+            <button class="buyBTN">
+                Buy Now
+            </button>
 
         </div>
 
@@ -210,6 +210,17 @@
             document.getElementById('hamBtn').style.opacity = '1';
             document.getElementById('hamBtn').style.transition = '.1s';
         }
+
+        function cartPage() {
+            window.location.href = "card.html"
+        }
+
+        const card = document.querySelectorAll('.card');
+        card.forEach(card => {
+            card.addEventListener('click', () => {
+                window.location.href = "item.html";
+            });
+        });
     </script>
 </body>
 
